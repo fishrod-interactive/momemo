@@ -14,6 +14,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+	[RKClient clientWithBaseURL:@"http://api.themoviedb.org/3"];
     // Override point for customization after application launch.
     return YES;
 }

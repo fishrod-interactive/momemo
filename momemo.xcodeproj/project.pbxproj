@@ -26,6 +26,14 @@
 		DD53305D1525F83E00A601A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5330301525F83E00A601A4 /* Foundation.framework */; };
 		DD5330651525F83E00A601A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD5330631525F83E00A601A4 /* InfoPlist.strings */; };
 		DD5330681525F83E00A601A4 /* momemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5330671525F83E00A601A4 /* momemoTests.m */; };
+		DD53309015260EA100A601A4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD53308E15260E9400A601A4 /* CFNetwork.framework */; };
+		DD53309215260EBC00A601A4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD53309115260EBC00A601A4 /* CoreData.framework */; };
+		DD53309415260EC900A601A4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD53309315260EC900A601A4 /* MobileCoreServices.framework */; };
+		DD53309615260ED400A601A4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD53309515260ED400A601A4 /* Security.framework */; };
+		DD53309815260EE400A601A4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD53309715260EE300A601A4 /* SystemConfiguration.framework */; };
+		DD53309A15260EED00A601A4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD53309915260EED00A601A4 /* QuartzCore.framework */; };
+		DD53309C15260EF600A601A4 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DD53309B15260EF600A601A4 /* libxml2.dylib */; };
+		DD5330F0152633D100A601A4 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5330E61526336B00A601A4 /* libRestKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,41 @@
 			remoteGlobalIDString = DD5330291525F83E00A601A4;
 			remoteInfo = momemo;
 		};
+		DD5330E51526336B00A601A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD53307815260D6200A601A4 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		DD5330E71526336B00A601A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD53307815260D6200A601A4 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		DD5330E91526336B00A601A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD53307815260D6200A601A4 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		DD5330EB1526336B00A601A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD53307815260D6200A601A4 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		DD5330EE152633C100A601A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD53307815260D6200A601A4 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -43,28 +86,36 @@
 		DD53302E1525F83E00A601A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD5330301525F83E00A601A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD5330321525F83E00A601A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DD5330361525F83E00A601A4 /* momemo-Info.plist */ = {isa = PBXFileReference; path = "momemo-Info.plist"; sourceTree = "<group>"; };
+		DD5330361525F83E00A601A4 /* momemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "momemo-Info.plist"; sourceTree = "<group>"; };
 		DD5330381525F83E00A601A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD53303A1525F83E00A601A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DD53303C1525F83E00A601A4 /* momemo-Prefix.pch */ = {isa = PBXFileReference; path = "momemo-Prefix.pch"; sourceTree = "<group>"; };
-		DD53303D1525F83E00A601A4 /* MMAppDelegate.h */ = {isa = PBXFileReference; path = MMAppDelegate.h; sourceTree = "<group>"; };
+		DD53303C1525F83E00A601A4 /* momemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "momemo-Prefix.pch"; sourceTree = "<group>"; };
+		DD53303D1525F83E00A601A4 /* MMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMAppDelegate.h; sourceTree = "<group>"; };
 		DD53303E1525F83E00A601A4 /* MMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAppDelegate.m; sourceTree = "<group>"; };
 		DD5330411525F83E00A601A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		DD5330441525F83E00A601A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		DD5330461525F83E00A601A4 /* MMFirstViewController.h */ = {isa = PBXFileReference; path = MMFirstViewController.h; sourceTree = "<group>"; };
+		DD5330461525F83E00A601A4 /* MMFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMFirstViewController.h; sourceTree = "<group>"; };
 		DD5330471525F83E00A601A4 /* MMFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMFirstViewController.m; sourceTree = "<group>"; };
 		DD5330491525F83E00A601A4 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		DD53304B1525F83E00A601A4 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		DD53304D1525F83E00A601A4 /* MMSecondViewController.h */ = {isa = PBXFileReference; path = MMSecondViewController.h; sourceTree = "<group>"; };
+		DD53304D1525F83E00A601A4 /* MMSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMSecondViewController.h; sourceTree = "<group>"; };
 		DD53304E1525F83E00A601A4 /* MMSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMSecondViewController.m; sourceTree = "<group>"; };
 		DD5330501525F83E00A601A4 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		DD5330521525F83E00A601A4 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		DD5330591525F83E00A601A4 /* momemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = momemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD53305A1525F83E00A601A4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		DD5330621525F83E00A601A4 /* momemoTests-Info.plist */ = {isa = PBXFileReference; path = "momemoTests-Info.plist"; sourceTree = "<group>"; };
+		DD5330621525F83E00A601A4 /* momemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "momemoTests-Info.plist"; sourceTree = "<group>"; };
 		DD5330641525F83E00A601A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DD5330661525F83E00A601A4 /* momemoTests.h */ = {isa = PBXFileReference; path = momemoTests.h; sourceTree = "<group>"; };
+		DD5330661525F83E00A601A4 /* momemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = momemoTests.h; sourceTree = "<group>"; };
 		DD5330671525F83E00A601A4 /* momemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = momemoTests.m; sourceTree = "<group>"; };
+		DD53307815260D6200A601A4 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		DD53308E15260E9400A601A4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DD53309115260EBC00A601A4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DD53309315260EC900A601A4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DD53309515260ED400A601A4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DD53309715260EE300A601A4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DD53309915260EED00A601A4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DD53309B15260EF600A601A4 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +123,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD5330F0152633D100A601A4 /* libRestKit.a in Frameworks */,
+				DD53309C15260EF600A601A4 /* libxml2.dylib in Frameworks */,
+				DD53309A15260EED00A601A4 /* QuartzCore.framework in Frameworks */,
+				DD53309815260EE400A601A4 /* SystemConfiguration.framework in Frameworks */,
+				DD53309615260ED400A601A4 /* Security.framework in Frameworks */,
+				DD53309415260EC900A601A4 /* MobileCoreServices.framework in Frameworks */,
+				DD53309215260EBC00A601A4 /* CoreData.framework in Frameworks */,
 				DD53302F1525F83E00A601A4 /* UIKit.framework in Frameworks */,
 				DD5330311525F83E00A601A4 /* Foundation.framework in Frameworks */,
+				DD53309015260EA100A601A4 /* CFNetwork.framework in Frameworks */,
 				DD5330331525F83E00A601A4 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,6 +153,7 @@
 		DD53301F1525F83C00A601A4 = {
 			isa = PBXGroup;
 			children = (
+				DD53307815260D6200A601A4 /* RestKit.xcodeproj */,
 				DD5330341525F83E00A601A4 /* momemo */,
 				DD5330601525F83E00A601A4 /* momemoTests */,
 				DD53302D1525F83E00A601A4 /* Frameworks */,
@@ -113,6 +173,13 @@
 		DD53302D1525F83E00A601A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DD53309B15260EF600A601A4 /* libxml2.dylib */,
+				DD53309915260EED00A601A4 /* QuartzCore.framework */,
+				DD53309715260EE300A601A4 /* SystemConfiguration.framework */,
+				DD53309515260ED400A601A4 /* Security.framework */,
+				DD53309315260EC900A601A4 /* MobileCoreServices.framework */,
+				DD53309115260EBC00A601A4 /* CoreData.framework */,
+				DD53308E15260E9400A601A4 /* CFNetwork.framework */,
 				DD53302E1525F83E00A601A4 /* UIKit.framework */,
 				DD5330301525F83E00A601A4 /* Foundation.framework */,
 				DD5330321525F83E00A601A4 /* CoreGraphics.framework */,
@@ -171,6 +238,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DD53307915260D6200A601A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD5330E61526336B00A601A4 /* libRestKit.a */,
+				DD5330E81526336B00A601A4 /* RestKitTests.octest */,
+				DD5330EA1526336B00A601A4 /* RestKit.framework */,
+				DD5330EC1526336B00A601A4 /* RestKitFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,6 +263,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DD5330EF152633C100A601A4 /* PBXTargetDependency */,
 			);
 			name = momemo;
 			productName = momemo;
@@ -230,6 +309,12 @@
 			mainGroup = DD53301F1525F83C00A601A4;
 			productRefGroup = DD53302B1525F83E00A601A4 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DD53307915260D6200A601A4 /* Products */;
+					ProjectRef = DD53307815260D6200A601A4 /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DD5330291525F83E00A601A4 /* momemo */,
@@ -237,6 +322,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DD5330E61526336B00A601A4 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = DD5330E51526336B00A601A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD5330E81526336B00A601A4 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = DD5330E71526336B00A601A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD5330EA1526336B00A601A4 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = DD5330E91526336B00A601A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DD5330EC1526336B00A601A4 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = DD5330EB1526336B00A601A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DD5330281525F83E00A601A4 /* Resources */ = {
@@ -306,6 +422,11 @@
 			isa = PBXTargetDependency;
 			target = DD5330291525F83E00A601A4 /* momemo */;
 			targetProxy = DD53305E1525F83E00A601A4 /* PBXContainerItemProxy */;
+		};
+		DD5330EF152633C100A601A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = DD5330EE152633C100A601A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -397,8 +518,14 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "momemo/momemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RestKit/Build\"";
 				INFOPLIST_FILE = "momemo/momemo-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,8 +535,14 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "momemo/momemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/RestKit/Build\"";
 				INFOPLIST_FILE = "momemo/momemo-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -467,6 +600,7 @@
 				DD53306D1525F83E00A601A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD53306E1525F83E00A601A4 /* Build configuration list for PBXNativeTarget "momemoTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +609,7 @@
 				DD5330701525F83E00A601A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

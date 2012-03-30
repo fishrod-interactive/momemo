@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RestKit/RestKit.h>
 
-@interface MMFirstViewController : UIViewController
+@interface MMFirstViewController : UIViewController <UISearchDisplayDelegate, UITableViewDataSource, UITableViewDelegate, RKRequestDelegate>
 
 @end
