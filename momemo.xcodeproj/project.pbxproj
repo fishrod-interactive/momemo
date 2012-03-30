@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD53302F1525F83E00A601A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD53302E1525F83E00A601A4 /* UIKit.framework */; };
+		DD5330311525F83E00A601A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5330301525F83E00A601A4 /* Foundation.framework */; };
+		DD5330331525F83E00A601A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5330321525F83E00A601A4 /* CoreGraphics.framework */; };
+		DD5330391525F83E00A601A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD5330371525F83E00A601A4 /* InfoPlist.strings */; };
+		DD53303B1525F83E00A601A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD53303A1525F83E00A601A4 /* main.m */; };
+		DD53303F1525F83E00A601A4 /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD53303E1525F83E00A601A4 /* MMAppDelegate.m */; };
+		DD5330421525F83E00A601A4 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5330401525F83E00A601A4 /* MainStoryboard_iPhone.storyboard */; };
+		DD5330451525F83E00A601A4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5330431525F83E00A601A4 /* MainStoryboard_iPad.storyboard */; };
+		DD5330481525F83E00A601A4 /* MMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5330471525F83E00A601A4 /* MMFirstViewController.m */; };
+		DD53304A1525F83E00A601A4 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5330491525F83E00A601A4 /* first.png */; };
+		DD53304C1525F83E00A601A4 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD53304B1525F83E00A601A4 /* first@2x.png */; };
+		DD53304F1525F83E00A601A4 /* MMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD53304E1525F83E00A601A4 /* MMSecondViewController.m */; };
+		DD5330511525F83E00A601A4 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5330501525F83E00A601A4 /* second.png */; };
+		DD5330531525F83E00A601A4 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD5330521525F83E00A601A4 /* second@2x.png */; };
+		DD53305B1525F83E00A601A4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD53305A1525F83E00A601A4 /* SenTestingKit.framework */; };
+		DD53305C1525F83E00A601A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD53302E1525F83E00A601A4 /* UIKit.framework */; };
+		DD53305D1525F83E00A601A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5330301525F83E00A601A4 /* Foundation.framework */; };
+		DD5330651525F83E00A601A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD5330631525F83E00A601A4 /* InfoPlist.strings */; };
+		DD5330681525F83E00A601A4 /* momemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5330671525F83E00A601A4 /* momemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD53305E1525F83E00A601A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD5330211525F83C00A601A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD5330291525F83E00A601A4;
+			remoteInfo = momemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD53302A1525F83E00A601A4 /* momemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = momemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD53302E1525F83E00A601A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD5330301525F83E00A601A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD5330321525F83E00A601A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DD5330361525F83E00A601A4 /* momemo-Info.plist */ = {isa = PBXFileReference; path = "momemo-Info.plist"; sourceTree = "<group>"; };
+		DD5330381525F83E00A601A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD53303A1525F83E00A601A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD53303C1525F83E00A601A4 /* momemo-Prefix.pch */ = {isa = PBXFileReference; path = "momemo-Prefix.pch"; sourceTree = "<group>"; };
+		DD53303D1525F83E00A601A4 /* MMAppDelegate.h */ = {isa = PBXFileReference; path = MMAppDelegate.h; sourceTree = "<group>"; };
+		DD53303E1525F83E00A601A4 /* MMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAppDelegate.m; sourceTree = "<group>"; };
+		DD5330411525F83E00A601A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		DD5330441525F83E00A601A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		DD5330461525F83E00A601A4 /* MMFirstViewController.h */ = {isa = PBXFileReference; path = MMFirstViewController.h; sourceTree = "<group>"; };
+		DD5330471525F83E00A601A4 /* MMFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMFirstViewController.m; sourceTree = "<group>"; };
+		DD5330491525F83E00A601A4 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		DD53304B1525F83E00A601A4 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		DD53304D1525F83E00A601A4 /* MMSecondViewController.h */ = {isa = PBXFileReference; path = MMSecondViewController.h; sourceTree = "<group>"; };
+		DD53304E1525F83E00A601A4 /* MMSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMSecondViewController.m; sourceTree = "<group>"; };
+		DD5330501525F83E00A601A4 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		DD5330521525F83E00A601A4 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		DD5330591525F83E00A601A4 /* momemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = momemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD53305A1525F83E00A601A4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DD5330621525F83E00A601A4 /* momemoTests-Info.plist */ = {isa = PBXFileReference; path = "momemoTests-Info.plist"; sourceTree = "<group>"; };
+		DD5330641525F83E00A601A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD5330661525F83E00A601A4 /* momemoTests.h */ = {isa = PBXFileReference; path = momemoTests.h; sourceTree = "<group>"; };
+		DD5330671525F83E00A601A4 /* momemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = momemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD5330271525F83E00A601A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD53302F1525F83E00A601A4 /* UIKit.framework in Frameworks */,
+				DD5330311525F83E00A601A4 /* Foundation.framework in Frameworks */,
+				DD5330331525F83E00A601A4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5330551525F83E00A601A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD53305B1525F83E00A601A4 /* SenTestingKit.framework in Frameworks */,
+				DD53305C1525F83E00A601A4 /* UIKit.framework in Frameworks */,
+				DD53305D1525F83E00A601A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD53301F1525F83C00A601A4 = {
+			isa = PBXGroup;
+			children = (
+				DD5330341525F83E00A601A4 /* momemo */,
+				DD5330601525F83E00A601A4 /* momemoTests */,
+				DD53302D1525F83E00A601A4 /* Frameworks */,
+				DD53302B1525F83E00A601A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD53302B1525F83E00A601A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD53302A1525F83E00A601A4 /* momemo.app */,
+				DD5330591525F83E00A601A4 /* momemoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD53302D1525F83E00A601A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD53302E1525F83E00A601A4 /* UIKit.framework */,
+				DD5330301525F83E00A601A4 /* Foundation.framework */,
+				DD5330321525F83E00A601A4 /* CoreGraphics.framework */,
+				DD53305A1525F83E00A601A4 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD5330341525F83E00A601A4 /* momemo */ = {
+			isa = PBXGroup;
+			children = (
+				DD53303D1525F83E00A601A4 /* MMAppDelegate.h */,
+				DD53303E1525F83E00A601A4 /* MMAppDelegate.m */,
+				DD5330401525F83E00A601A4 /* MainStoryboard_iPhone.storyboard */,
+				DD5330431525F83E00A601A4 /* MainStoryboard_iPad.storyboard */,
+				DD5330461525F83E00A601A4 /* MMFirstViewController.h */,
+				DD5330471525F83E00A601A4 /* MMFirstViewController.m */,
+				DD5330491525F83E00A601A4 /* first.png */,
+				DD53304B1525F83E00A601A4 /* first@2x.png */,
+				DD53304D1525F83E00A601A4 /* MMSecondViewController.h */,
+				DD53304E1525F83E00A601A4 /* MMSecondViewController.m */,
+				DD5330501525F83E00A601A4 /* second.png */,
+				DD5330521525F83E00A601A4 /* second@2x.png */,
+				DD5330351525F83E00A601A4 /* Supporting Files */,
+			);
+			path = momemo;
+			sourceTree = "<group>";
+		};
+		DD5330351525F83E00A601A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD5330361525F83E00A601A4 /* momemo-Info.plist */,
+				DD5330371525F83E00A601A4 /* InfoPlist.strings */,
+				DD53303A1525F83E00A601A4 /* main.m */,
+				DD53303C1525F83E00A601A4 /* momemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD5330601525F83E00A601A4 /* momemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD5330661525F83E00A601A4 /* momemoTests.h */,
+				DD5330671525F83E00A601A4 /* momemoTests.m */,
+				DD5330611525F83E00A601A4 /* Supporting Files */,
+			);
+			path = momemoTests;
+			sourceTree = "<group>";
+		};
+		DD5330611525F83E00A601A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD5330621525F83E00A601A4 /* momemoTests-Info.plist */,
+				DD5330631525F83E00A601A4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD5330291525F83E00A601A4 /* momemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD53306B1525F83E00A601A4 /* Build configuration list for PBXNativeTarget "momemo" */;
+			buildPhases = (
+				DD5330261525F83E00A601A4 /* Sources */,
+				DD5330271525F83E00A601A4 /* Frameworks */,
+				DD5330281525F83E00A601A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = momemo;
+			productName = momemo;
+			productReference = DD53302A1525F83E00A601A4 /* momemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD5330581525F83E00A601A4 /* momemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD53306E1525F83E00A601A4 /* Build configuration list for PBXNativeTarget "momemoTests" */;
+			buildPhases = (
+				DD5330541525F83E00A601A4 /* Sources */,
+				DD5330551525F83E00A601A4 /* Frameworks */,
+				DD5330561525F83E00A601A4 /* Resources */,
+				DD5330571525F83E00A601A4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD53305F1525F83E00A601A4 /* PBXTargetDependency */,
+			);
+			name = momemoTests;
+			productName = momemoTests;
+			productReference = DD5330591525F83E00A601A4 /* momemoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD5330211525F83C00A601A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MM;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "fishrod interactive";
+			};
+			buildConfigurationList = DD5330241525F83C00A601A4 /* Build configuration list for PBXProject "momemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DD53301F1525F83C00A601A4;
+			productRefGroup = DD53302B1525F83E00A601A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD5330291525F83E00A601A4 /* momemo */,
+				DD5330581525F83E00A601A4 /* momemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD5330281525F83E00A601A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5330391525F83E00A601A4 /* InfoPlist.strings in Resources */,
+				DD5330421525F83E00A601A4 /* MainStoryboard_iPhone.storyboard in Resources */,
+				DD5330451525F83E00A601A4 /* MainStoryboard_iPad.storyboard in Resources */,
+				DD53304A1525F83E00A601A4 /* first.png in Resources */,
+				DD53304C1525F83E00A601A4 /* first@2x.png in Resources */,
+				DD5330511525F83E00A601A4 /* second.png in Resources */,
+				DD5330531525F83E00A601A4 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5330561525F83E00A601A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5330651525F83E00A601A4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD5330571525F83E00A601A4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD5330261525F83E00A601A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD53303B1525F83E00A601A4 /* main.m in Sources */,
+				DD53303F1525F83E00A601A4 /* MMAppDelegate.m in Sources */,
+				DD5330481525F83E00A601A4 /* MMFirstViewController.m in Sources */,
+				DD53304F1525F83E00A601A4 /* MMSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5330541525F83E00A601A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5330681525F83E00A601A4 /* momemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD53305F1525F83E00A601A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD5330291525F83E00A601A4 /* momemo */;
+			targetProxy = DD53305E1525F83E00A601A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD5330371525F83E00A601A4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD5330381525F83E00A601A4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DD5330401525F83E00A601A4 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD5330411525F83E00A601A4 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		DD5330431525F83E00A601A4 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD5330441525F83E00A601A4 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		DD5330631525F83E00A601A4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD5330641525F83E00A601A4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD5330691525F83E00A601A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD53306A1525F83E00A601A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD53306C1525F83E00A601A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "momemo/momemo-Prefix.pch";
+				INFOPLIST_FILE = "momemo/momemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD53306D1525F83E00A601A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "momemo/momemo-Prefix.pch";
+				INFOPLIST_FILE = "momemo/momemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DD53306F1525F83E00A601A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/momemo.app/momemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "momemo/momemo-Prefix.pch";
+				INFOPLIST_FILE = "momemoTests/momemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DD5330701525F83E00A601A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/momemo.app/momemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "momemo/momemo-Prefix.pch";
+				INFOPLIST_FILE = "momemoTests/momemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD5330241525F83C00A601A4 /* Build configuration list for PBXProject "momemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD5330691525F83E00A601A4 /* Debug */,
+				DD53306A1525F83E00A601A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD53306B1525F83E00A601A4 /* Build configuration list for PBXNativeTarget "momemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD53306C1525F83E00A601A4 /* Debug */,
+				DD53306D1525F83E00A601A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD53306E1525F83E00A601A4 /* Build configuration list for PBXNativeTarget "momemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD53306F1525F83E00A601A4 /* Debug */,
+				DD5330701525F83E00A601A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD5330211525F83C00A601A4 /* Project object */;
+}
